@@ -8,7 +8,7 @@ export const PresaleContract = () => {
   const { data: signer, isError, isLoading } = useSigner();
 
   const contract = useContract({
-    address: "0xC7497285513467eEa5BCB11e37612DCFe0413D55",
+    address: "0xf49BE35B6a3032698E4dDD8A5D4Fc518DbCD8a50",
     abi: presaleAbi,
     signerOrProvider: signer
   });
