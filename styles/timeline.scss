@@ -1,0 +1,50 @@
+.stepper-row {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+
+  .dot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 40px;
+      border-width: 1px;
+      border: 1px solid #8fd6d6; 
+      box-shadow: 0px 0px 10px #FFFFFF; 
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #8fd6d6;
+      border: 2px solid #FFFFFF; 
+      box-shadow: 0px 0px 10px #FFFFFF; 
+    }
+    
+    .shade {
+      background-color: #8fd6d6;
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF; 
+      box-shadow: 0px 0px 10px #FFFFFF; 
+    }
+  }
+
+  .label {
+  }
+
+  &:last-of-type {
+    .dot-container::after {
+      display: none;
+    }
+  }
+}
